@@ -7,12 +7,9 @@
     <body>
         <div class="container">
             <div class="row" style="border:2px solid red">
-                <a href="Add.html">Add</a>
-                <a href="index.html">Index</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="display.html">Display</a>
-            </div>
+            <?php
+                include("nav.html");
+            ?>
         <div class="row" style="border:2px solid green">
             <table border="1">
                 <tr style="color:red">

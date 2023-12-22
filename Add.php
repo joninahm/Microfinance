@@ -6,12 +6,10 @@
     <body>
         <div class="container">
             <div class="row">
-        <a href="Add.html">Add</a>
-        <a href="index.html">Index</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="display.html">Display</a>
-    </div>
+                <?php
+                  include("nav.html");
+                ?>
+            </div>
 
     <div class="row">
         <div class="col-lg-12">
