@@ -2,6 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="We offer loans to only salary earners and no tolerence to frauds">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <title>about page</title>
     </head>
@@ -20,7 +21,7 @@
               <div class="card-header">
                 <marquee>
                   <h3 class="card-title">
-                  Why I love pogramming?
+                  Different types of loans
                   </h3>
                 </marquee>
               <div class="card-body">
@@ -51,7 +52,7 @@
                     <div class="card-footer">
                     <h3 class="card-title">Loans</h3>
                     <p>When one gets loans they are supposed tobe paid back in a given amount of time so if not paid back they could be taken under legal action</p>
-                    <a href="#" class="btn btn-primary">Get More information</a>
+                    <a href="#" class="btn btn-danger">Get More information</a>
                   </div>
                 </div>
                 
@@ -59,7 +60,9 @@
           </div>
         </div>
         <div class="row">
-            <p>Prosper microfinance offers loans to only salary earners</p>
+        <?php
+            include("footer.html")
+            ?>
         </div>
     </div>
     <script src="js/bootstrap.min.js"></script>

@@ -43,36 +43,10 @@
                             <option value="male">Male</option>
                         </select>
                     </div>
-
-                    <!--Movies-->
-                    <div class="form-group">
-                        <label for="movies">Use control and the mouse to select movies:</label>
-                        <select class="form-control" name="movies[]" multiple>
-                            <option value="robot">Mr Robot</option>
-                            <option value="Silican">Silican Valley</option>
-                            <option value="creator">The Creator</option>
-                            <option value="imagine">Imagination</option>
-                        </select>
-                    </div>
-                    <hr/>
-                    <label for="Python">Python</label>
-                    <input type="checkbox" name="python">
-
-                    <label for="PHP">Php</label>
-                    <input type="checkbox" name="php">
-
-                    <label for="Java">Java</label>
-                    <input type="checkbox" name="java">
-
-                    <label for="Javascript">Javascript</label>
-                    <input type="checkbox" name="js">
-
-                    <br/>
-
-                    <button type="submit" class="btn btn-danger">Submit</button>
-            </form>
             <div class="row">
-                <p>This is a contact form</p>
+            <?php
+            include("footer.html")
+            ?>
             </div>
         </div>
     </div>
