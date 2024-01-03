@@ -15,49 +15,58 @@
         </div>
 
         <div class="row">
-          <!--List-->
+          <!--Vision-->
           <div class="col-lg-4">
             <div class="card">
-              <div class="card-header">
-                <marquee>
+               <div class="card-header">
                   <h3 class="card-title">
-                  Different types of loans
+                  Vision Statement
                   </h3>
-                </marquee>
+        
               <div class="card-body">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">It is easy and fun</li>
-                  <li class="list-group-item">It enables me become a web designer</li>
-                  <li class="list-group-item">It enables me better the world through websites</li>
-                </ul>
+              To provide quality and innovative financial and nonfinancial services that empowers rural banks and productive poor to excellence. 
               </div>
             </div>
             </div>
           </div>
         
               
-                <!--Image-->
+                <!--Mission-->
                 <div class="col-lg-4">
                   <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">
+                    Mission Statement
+                    </h3>
+                  
                     <div class="card-body">
-                      <img src="images/image1.jpg" class="img-fluid" width="400" height="500">
+                    To reduce poverty through offering financial and business development services that are customer focused efficiently and professionally administered.
                     </div>
                   </div>
                 </div>
                 
                 
-                <!--Creative content-->
+                <!--Values-->
                 <div class="col-lg-4">
-                  <div class="card" style="width: 15rem;">
+                  <div class="card">
                     <div class="card-footer">
-                    <h3 class="card-title">Loans</h3>
-                    <p>When one gets loans they are supposed tobe paid back in a given amount of time so if not paid back they could be taken under legal action</p>
-                    <a href="#" class="btn btn-danger">Get More information</a>
+                      <h3 class="card-title">
+                        Values
+                      </h3>
+                    </div>
+                      <div class="card-body" style="width:20rem;">
+                    Integrity, fairness and honesty in all business dealings. Trust is the cornerstone of our business and it will never be compromised. We serve poor people on the basis of need not ethnicity, religion or political affiliation.
+                      </div>
                   </div>
                 </div>
                 
             </div>  
           </div>
+        </div>
+        <div class="row">
+          <p>
+          Microfinance is a banking service provided to low-income individuals or groups who otherwise would have no other access to financial services. Microfinance allows people to take on reasonable small business loans safely, in a manner that is consistent with ethical lending practices.
+          </p>
         </div>
         <div class="row">
         <?php
