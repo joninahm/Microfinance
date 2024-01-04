@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <?php
                   include("nav.html");
