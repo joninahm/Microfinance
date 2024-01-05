@@ -14,7 +14,7 @@
              <div class="row">
                 <div class="col-lg-12">
                 <form>
-                    <h3>Apply for a loan</h3>
+                    <h3 style="background-color:lightskyblue; color:darkred; text-align:center;">Secure yout financial problems and apply for a loan with us</h3>
                     <div class="form group">
                         <label for="surname">Surname</label>
                         <input type="text" name="surName" class="form-control">
@@ -22,7 +22,7 @@
 
                     <div class="form group">
                         <label for="first name">First name</label>
-                        <input type="text" name="firstName" class="form-control">
+                        <input type="text" name="firstName" class="form-control" style="float:right;">
                     </div>
 
                     <div class="form group">
@@ -56,7 +56,7 @@
                 </form>  
                 </div>
             </div>
-            <div>
+            <div class="row">
             <?php
             include("footer.html")
             ?>
