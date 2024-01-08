@@ -15,15 +15,15 @@
         }
     </style>
 </head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
+<body class="bg-dark">
+    <div class="container">
+        <div class="row" style="background-color:black;">
             <?php
             include("nav.html");
             ?>
         </div>
 
-        <div class="row">
+        <div class="row mt-5">
             <?php
             include("carousel.html");
             ?> 
@@ -104,11 +104,8 @@
             ?>
         </div>
         <div class="row">
-          <?php
-            print date("m/d/y G.i:s<br>", time());
-            echo "<br>";
-            print "Today is ";
-            print date("j of F Y, \a\\t g.i a", time());
+          <?php          
+echo date('Y-m-d H:i:s');
           ?>
         </div>
         

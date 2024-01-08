@@ -16,4 +16,5 @@
     echo $age . AGE;
 }
 concatenateVariableAndConstant();
+
 ?>
