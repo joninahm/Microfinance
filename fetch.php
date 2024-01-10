@@ -1,8 +1,9 @@
 <?php
 
     require_once('connect.php');
-    $query ="select * from loans";
+    $query ="SELECT * FROM loans";
     $result = mysqli_query($con,$query);
+
 
 
 ?>
@@ -15,12 +16,13 @@
         <title>Fetch data From Database in Php</title>
     </head>
     <body class="bg-dark">
-       <div class="container">
+        <div class="container">
             <div class="row">
                 <?php
                     include("nav.html");
                 ?>
             </div>
+            
             <div class="row mt-5">
                 <div class="col">
                     <div class="card mt-5">
@@ -35,6 +37,7 @@
                                     <td>Reason</td>
                                     <td>Principle</td>
                                     <td>Interest</td>
+                                    <td>Action</td>
                                 </tr>
                                 <tr>
                                     <?php
@@ -42,13 +45,12 @@
                                     while($row = mysqli_fetch_assoc($result))
                                     {
                                     ?>
-                                    <td><?php echo $row['ID'] ?></td>
-                                    <td><?php echo $row['ClientName'] ?></td>
-                                    <td><?php echo $row['Reason'] ?></td>
-                                    <td><?php echo $row['Principle'] ?></td>
-                                    <td><?php echo $row['Interest'] ?></td>
-                                   
-                                    <td><a href="#" class="btn btn-outline-primary">Edit</a></td>
+                                    <td><?php echo $row['ID']; ?></td>
+                                    <td><?php echo $row['ClientName']; ?></td>
+                                    <td><?php echo $row['Reason']; ?></td>
+                                    <td><?php echo $row['Principle']; ?></td>
+                                    <td><?php echo $row['Interest']; ?></td>
+                                    <td><a href="updateform.php?id=<?php echo $row['ID'];?>">Update</a></td>
                                     <td><a href="#" class="btn btn-outline-danger">Delete</a></td>
                                 </tr>
                                 <?php
@@ -61,6 +63,11 @@
                         </div>
                     </div>
             </div>
+                       
+        </div>
+            
+               
+            
        </div>
        <script src="js/bootstrap.min.js"></script>
     </body>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +9,34 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <?php
-                 include("nav.html");
-            ?>
-        </div>
+        <?php
+        require_once "connect.php";
+            if(isset($_GET['id'])){
+            $id = $_GET['id'];
+            }
+            $query = "SELECT * FROM loans";
+            $result = mysqli_query($con,$query);
+            if(!$result){
+                die("query failed".mysqli_error($con));
+            }
+            else{
+                $row = mysqli_fetch_row($result);
+
+            }
+                $query = "SELECT * FROM loans WHERE id=?";
+                $stmt = mysqli_prepare($con, $query);
+                mysqli_stmt_bind_param($stmt, "i", $id);
+                mysqli_stmt_execute($stmt);
+                $result = mysqli_stmt_get_result($stmt);
+                $data = mysqli_fetch_assoc($result);
+                
+
+       
+        ?>
         <div class="row">
             <div class="col-lg-6">
-                <h2>Add New User</h2>
-                <form action="processform.php" method="POST">
+                <h2>Update info</h2>
+                <form action="processupdate.php" method="POST">
                     <div class="form group">
                         <label for="ClientName">Client Name</label>
                         <input type="text" name="ClientName" class="form-control">
@@ -37,7 +57,7 @@
                         <input type="text" name="Interest" class="form-control" >
                     </div>
 
-                    <button type="submit" class="btn btn-warning">Add user</button>
+                    <button type="submit" class="btn btn-warning">Upadate</button>
                 </form> 
             </div>                    
         </div>  

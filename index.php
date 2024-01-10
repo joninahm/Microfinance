@@ -6,24 +6,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>index page</title>
     <style>
-        .card-header{
-            background-color:darkred;
-            color:lightskyblue;
-        }
         .card{
             border-radius:30px;
+            border-color:red;
         }
     </style>
 </head>
-<body class="bg-dark">
-    <div class="container">
-        <div class="row" style="background-color:black;">
+<body>
+    <div class="container-fluid">
+        <div class="row">
             <?php
             include("nav.html");
             ?>
         </div>
 
-        <div class="row mt-5">
+        <div class="row">
             <?php
             include("carousel.html");
             ?> 
@@ -32,7 +29,7 @@
         <div class="row">
             <h3 align="center" style="background-color:lightskyblue; color:darkred;">OUR FEATURED SERVICES</h3>
             <!--School fees-->
-          <div class="col-lg-3">
+          <div class="col-lg-3 text-black">
             <div class="card">
               <div class="card-header">
                 <marquee behavior="alternate">
@@ -98,6 +95,42 @@
                 </div> 
         </div>  
         <hr>
+
+        
+        <div class="row">
+                <?php
+                require_once("connect.php");
+                $query="SELECT *FROM loans";
+                $result=mysqli_query($con, $query);
+                while($row = mysqli_fetch_assoc($result))
+                  { 
+                ?>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <?php echo $row['ClientName'];?>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text"><?php echo $row['Reason'];?></p>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text"><?php echo $row['Principle'];?></p>
+                        </div>
+
+
+                        <div class="card-footer">
+                            <?php echo $row['Interest'];?>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <?php } ?>
+        </div>
+            
+            
         <div class="row">
             <?php
             include("footer.html")
